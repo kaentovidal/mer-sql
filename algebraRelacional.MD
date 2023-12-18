@@ -3,7 +3,7 @@ El Algebra relacional es un lenguaje de consulta procedural. Consta de un conjun
 
 ## Proyeccion &pi;
 - La proyeccion de una relacion (R) es la relacion definida sobre los atributos indicados (A,B, ...): &pi; <sub>A,B,..</sub>(R)
-- Eliminas posibles filas duplicadas
+- Eliminas posibles filas duplicadas<br>
 ![](src/algebra/proyeccion.png)
 
 ## Selección &sigma;
