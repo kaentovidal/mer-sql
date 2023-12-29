@@ -1,4 +1,4 @@
--- docker cp ./datos mysql:/tmp/datos
+-- docker cp ./world mysql:/tmp/datos
 
 -- El Algebra relacional es un lenguaje de consulta procedural. 
 --Consta de un conjunto de operaciones que toman como entrada 
@@ -8,7 +8,13 @@
 
 -- enter to mysql from consoles
 
-mysql -u root -p
+
+DATE - format: YYYY-MM-DD
+DATETIME - format: YYYY-MM-DD HH:MI:SS
+TIMESTAMP - format: YYYY-MM-DD HH:MI:SS
+YEAR - format YYYY or YY
+
+mysql -u root -p < ./test_db/employees.sql
 
 --  basic commands 
 show databases;
@@ -39,4 +45,44 @@ SELECT MAX(article) AS article FROM shop;
 SELECT article, dealer, price
 FROM   shop
 WHERE  price=(SELECT MAX(price) FROM shop);
+
+CREATE TABLE empleado (
+    id INT 
+    nombre varchar(50),
+    apellido varchar(50),
+    direccion varchar(50),
+    fNacimiento date
+);
+
+CREATE TABLE empleado (
+    id INT 
+    nombre varchar(50),
+    apellido varchar(50),
+    direccion varchar(50),
+    fNacimiento date
+);
+
+CREATE TABLE empleado (
+    id INT 
+    nombre varchar(50),
+    apellido varchar(50),
+    direccion varchar(50),
+    fNacimiento date
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
